@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*@import 'assets/stylesheets/_bootstrap.scss';*/
+/* variables importantes */
+/* estilos específicos */
+@font-face {
+  font-family: "Graphik";
+  src: url(../fonts/Graphik-Regular.otf) format("opentype"); }
+@font-face {
+  font-family: "Graphik2";
+  src: url(../fonts/Graphik-Bold.otf) format("opentype"); }
+@font-face {
+  font-family: "Graphik3";
+  src: url(../fonts/Graphik-Semibold.otf) format("opentype"); }
+@font-face {
+  font-family: "Graphik4";
+  src: url(../fonts/Graphik-Light.otf) format("opentype"); }
+@font-face {
+  font-family: "Graphik5";
+  src: url(../fonts/Graphik-Black.otf) format("opentype"); }
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #4f366f, #41bdac);
+  height: 100vh; }
+
+nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(to bottom, #1d1b28, rgba(0, 0, 0, 0));
+  border: none;
+  font-family: "Graphik";
+  font-size: 1.2em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-shadow: 0px 0px 10px #1d1b28;
+  padding: 2% 0; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+  nav li {
+    display: inline-block;
+    margin: 20px 30px; }
+    nav li a {
+      text-decoration: none;
+      color: #ffffff;
+      padding-bottom: 10px; }
+    nav li a:hover {
+      color: #ea446a; }
+    nav li a:active {
+      border-bottom: 2px solid #ea446a; }
+
+#about {
+  margin: 12% 0 0 0;
+  padding: 0 5%; }
+
+/*# sourceMappingURL=main.css.map */
