@@ -1,3 +1,3 @@
 # PORTAFOLIO
 
-[estructura web](grilla.jpg)
+ ![img](https://image.ibb.co/kR3kqn/grilla.jpg)
