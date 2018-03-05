@@ -25,7 +25,12 @@ body{
   padding:0;
   color: $blanco;
   background: linear-gradient(to bottom , $morado, $verde);
-  height: 100vh;
+}
+
+h1{
+  font-family: "Graphik2";
+  letter-spacing: 0.02em;
+  font-size: 3.8em;
 }
 
 nav{
@@ -62,12 +67,213 @@ nav{
   }
 }
 
-#about{
-  margin: 12% 0 0 0;
-  padding: 0 5%;
+#menur{
+  display:none;
+}
 
+#logo{
+  margin-top:150px;
+  width: 100%;
+  img{
+    width:280px;
+    height:auto;
+    display:block;
+    margin: 2% auto;
+  }
+}
+
+#about{
+  width: 60%;
+  display:block;
+  margin: 5% auto;
+  padding: 0 5%;
+  img{
+    width:420px;
+    height:auto;
+    border-radius: 100%;
+    box-shadow: 5px 5px 70px $azul_oscuro;
+    margin-left: 10%;
+    /*mix-blend-mode: darken;*/
+  }
+  .text{
+    opacity:0;
+    width:420px;
+    height:auto;
+    text-align:left;
+    font-family: "Graphik";
+    font-size:1.2em;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    position: relative;
+    margin-top: -15%;
+    padding:0; 
+    display:inline-block;
+   }
+}
+
+#skill{
+  width: 60%;
+  display:block;
+  margin: 8% auto;
+  h2{
+    font-family: "Graphik2";
+    letter-spacing: 0.02em;
+    font-size: 2.5em;
+    text-align:center;
+  }
+  img{
+    width:20%;
+    height:auto;
+    margin:1em;
+  }
+}
+
+#work{
+  width: 65%;
+  display:block;
+  margin: 5% auto;
+  text-align:right;
+  #pegas{
+    vertical-align:top;
+    column-count: 3;
+    column-gap: 2em;
+    display: inline-block;
+  }
+  img{
+    display: inline-block;
+    margin: 2em 0 1em 0;
+    width: 100%;
+  }
+}
+
+#contact{
+    width: 100%;
+    margin: 5% 0 0 0;
+    text-align:center;
+    background:$azul_oscuro;
+    h1{
+      display:inline-block;
+      margin:4% 0 5px 0;
+    }
+    hr{
+      width:400px;
+      background: linear-gradient(to right , $morado, $magenta, $naranjo, $amarillo, $verde);
+      border-style:none;
+      height:4px;
+    }
+    .cont{
+      font-family: "Graphik";
+      display:block;
+      width:50%;
+      margin:2% auto 0 auto;
+    }
+  }
+
+
+// RESPONSIVE
+
+@media (max-width: 750px){
+
+  h1{
+  font-size:3em;
+  text-align:center;
+}
+
+  #menur{
+    font-family: "Graphik2";
+    letter-spacing:0.05em;
+    display:block;
+    margin:10px 0 15px 0;
+    img{
+      display:block;
+      width:35px;
+      height:auto;
+      margin:10px auto 0 auto;
+    }
+  }
+
+  nav{
+    background: $azul_oscuro;
+    text-shadow: none;
+    padding: 2% 0;
+    ul{
+      display:none;
+      margin: 0;
+      padding:0;
+    }
+    li{
+      display: block;
+      margin: 10px 0;
+      padding-bottom:10px;
+      border-bottom:1px solid $morado;
+      a:active{
+        color: $magenta;
+        border-bottom: none;
+      }
+      
+    }
+    li:last-child{
+      border-bottom:none;
+      margin:0;
+    }
+    li:first-child{
+      border-top:1px solid $morado;
+      padding-top:10px;
+    }
+  }
+
+  #about{
+    width:90%;
+    margin-top:100px;
+    img{
+      width:90%;
+      height:auto;
+      margin-left:0;
+    }
+    .text{
+      width:63%;
+      font-size:1.1em;
+      line-height: 25px;
+      letter-spacing: 0.02em;
+      position: relative;
+      margin-top: -25%;
+      padding: 0; 
+      display: inline-block;
+     }
+  }
+
+  #skill{
+  width: 100%;
+  display:block;
+  margin: 10% auto;
+    h2{
+      letter-spacing: 0.02em;
+      font-size: 2em;
+      text-align:center;
+    }
+    img{
+      width:28%;
+      height:auto;
+      margin:0.5em;
+    }
+  }
+
+  #work{
+  width: 90%;
+  #pegas{
+    column-count: 1;
+  }
 }
 
 
+#contact{
+    hr{
+      width:80%;
+    }
+  }
+
+
+
+}/*querie*/
 
 
