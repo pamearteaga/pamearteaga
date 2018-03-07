@@ -13,13 +13,13 @@ $('a[href^="#"]').click(function() {
 
 // boton menu responsive
 $('#menur').click(function(){
-  $('ul').toggle();
+  $('ul').toggle("blind");
 });
 
 //texto deslizante
-
+/*
 $(window).scroll(function(){
   $('p').animate({left: "40%", opacity: 1}, {duration: 450,queue: false});
-});
+});*/
 
 
