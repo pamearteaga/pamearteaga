@@ -117,26 +117,37 @@ nav {
     text-align: right; }
   #work .muestra {
     display: inline-block;
+    background-image: url("./../../assest/img/thermoplastics.png");
     width: 28%;
     height: 400px;
     margin: 2%;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-    #work .muestra .bajada {
-      height: 250px;
-      background: linear-gradient(to top, #4f366f, rgba(0, 0, 0, 0));
-      margin-top: 150px;
-      padding: 5%;
-      letter-spacing: 0.02em;
-      line-height: 20px; }
-      #work .muestra .bajada h3 {
-        margin-top: 40px;
-        font-family: "Graphik2"; }
-      #work .muestra .bajada p {
-        font-family: "Graphik4"; }
   #work .muestra:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.bajada {
+  width: 100%;
+  height: 350px;
+  margin-top: 50px;
+  background: linear-gradient(to top, #1d1b28, #1d1b28, rgba(0, 0, 0, 0));
+  padding: 150px 5% 0 5%;
+  letter-spacing: 0.02em;
+  line-height: 20px; }
+  .bajada h3 {
+    font-family: "Graphik2"; }
+  .bajada p {
+    font-family: "Graphik4"; }
+  .bajada a {
+    width: 50px;
+    color: #f2de72;
+    font-family: "Graphik3";
+    letter-spacing: 0.02em;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #f2de72; }
 
 #contact {
   width: 100%;
