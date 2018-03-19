@@ -46,20 +46,22 @@ body {
 h1 {
   font-family: "Graphik2";
   letter-spacing: 0.02em;
-  font-size: 3.8em; }
+  font-size: 3.2em;
+  text-align: center;
+  margin-top: 15%; }
 
 nav {
   width: 100%;
   height: auto;
   position: fixed;
   top: 0;
+  z-index: 1;
   background: linear-gradient(to bottom, #1d1b28, rgba(0, 0, 0, 0));
   border: none;
-  font-family: "Graphik";
-  font-size: 1.2em;
+  font-family: "Graphik3";
+  font-size: 0.95em;
   letter-spacing: 0.03em;
   text-align: center;
-  text-shadow: 0px 0px 10px #1d1b28;
   padding: 2% 0; }
   nav ul {
     margin: 0;
@@ -69,12 +71,15 @@ nav {
     margin: 20px 30px; }
     nav li a {
       text-decoration: none;
+      text-transform: uppercase;
       color: #ffffff;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      -webkit-transition: border-bottom 0.3s, color 0.3s;
+      transition: border-bottom 0.3s, color 0.3s; }
     nav li a:hover {
       color: #ea446a; }
     nav li a:active {
-      border-bottom: 2px solid #ea446a; }
+      color: #ea446a; }
 
 #menur {
   display: none; }
@@ -101,10 +106,8 @@ nav {
     margin-left: 10%;
     /*mix-blend-mode: darken;*/ }
   #about .text {
-    opacity: 1;
     width: 420px;
-    opacity: 0.85;
-    background-color: #1d1b28;
+    background-color: rgba(29, 27, 40, 0.85);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     margin-left: 40%;
     height: auto;
@@ -123,22 +126,16 @@ nav {
   width: 60%;
   display: block;
   margin: 8% auto; }
-  #skill h2 {
-    font-family: "Graphik2";
-    letter-spacing: 0.02em;
-    font-size: 2.5em;
-    text-align: center; }
-  #skill img {
-    width: 20%;
-    height: auto;
-    margin: 1em; }
+  #skill i {
+    opacity: 0.6;
+    font-size: 5em;
+    display: inline-block;
+    margin: 2%; }
 
 #work {
   width: 70%;
   display: block;
   margin: 5% auto; }
-  #work h1 {
-    text-align: right; }
   #work .muestra {
     display: inline-block;
     background-image: url("./../../assest/img/thermoplastics.png");
@@ -152,17 +149,18 @@ nav {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .bajada {
-  width: 100%;
+  width: 90%;
   height: 350px;
   margin-top: 50px;
   background: linear-gradient(to top, #1d1b28, #1d1b28, rgba(0, 0, 0, 0));
-  padding: 130px 6% 0 6%;
-  letter-spacing: 0.02em;
+  padding: 130px 5% 0 7%;
+  letter-spacing: 0.02e4;
   line-height: 20px; }
   .bajada h3 {
     font-family: "Graphik2"; }
   .bajada p {
-    font-family: "Graphik4"; }
+    font-family: "Graphik4";
+    padding: 0 2%; }
   .bajada .botones {
     margin-top: 20px; }
   .bajada a {
@@ -172,14 +170,25 @@ nav {
     font-size: 14px;
     text-decoration: none; }
   .bajada .codigobtn {
-    color: #e28947;
-    margin-right: 20px;
+    color: #41bdac;
+    margin-right: 22px;
     padding: 10px 15px;
-    border: 2px solid #e28947; }
+    border: 2px solid #41bdac;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s; }
+  .bajada .codigobtn:hover {
+    color: #ffffff;
+    background-color: #41bdac; }
   .bajada .demobtn {
     color: #f2de72;
     padding: 10px 25px;
-    border: 2px solid #f2de72; }
+    border: 2px solid #f2de72;
+    margin-left: 18px;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s; }
+  .bajada .demobtn:hover {
+    color: #ffffff;
+    background-color: #f2de72; }
 
 #contact {
   width: 100%;
@@ -188,17 +197,37 @@ nav {
   background: #1d1b28; }
   #contact h1 {
     display: inline-block;
-    margin: 4% 0 5px 0; }
+    margin: 4% 0 5px 0;
+    font-size: 2.8em; }
   #contact hr {
     width: 400px;
     background: linear-gradient(to right, #4f366f, #ea446a, #e28947, #f2de72, #41bdac);
     border-style: none;
-    height: 4px; }
+    height: 3px; }
   #contact .cont {
     font-family: "Graphik";
     display: block;
     width: 50%;
     margin: 2% auto 0 auto; }
+  #contact p {
+    display: inline-block; }
+  #contact .iconos {
+    display: block;
+    width: 100%;
+    margin: 5% auto 0 auto; }
+    #contact .iconos img {
+      width: 15%;
+      height: auto;
+      margin: 0 20px; }
+  #contact strong {
+    margin: 8%;
+    display: inline-block;
+    font-family: "Graphik3";
+    font-size: 1em;
+    letter-spacing: 0.02em; }
+  #contact span {
+    margin: 0 10px;
+    font-family: "Graphik2"; }
 
 @media (max-width: 750px) {
   h1 {
@@ -212,7 +241,7 @@ nav {
     margin: 10px 0 15px 0; }
     #menur img {
       display: block;
-      width: 35px;
+      width: 25px;
       height: auto;
       margin: 10px auto 0 auto; }
 
@@ -229,6 +258,8 @@ nav {
       margin: 10px 0;
       padding-bottom: 10px;
       border-bottom: 1px solid #4f366f; }
+      nav li a {
+        font-size: 0.85em; }
       nav li a:active {
         color: #ea446a;
         border-bottom: none; }
@@ -256,17 +287,15 @@ nav {
       padding: 0; }
 
   #skill {
-    width: 100%;
+    width: 90%;
     display: block;
     margin: 10% auto; }
-    #skill h2 {
-      letter-spacing: 0.02em;
-      font-size: 2em;
-      text-align: center; }
-    #skill img {
-      width: 28%;
-      height: auto;
-      margin: 0.5em; }
+    #skill h1 {
+      font-size: 1.8em; }
+    #skill i {
+      font-size: 4em;
+      display: inline-block;
+      margin: 6%; }
 
   #work {
     margin-top: 20%;
@@ -278,8 +307,27 @@ nav {
       width: 85%;
       margin: 15% auto; }
 
+  #contact h1 {
+    font-size: 2.6em;
+    margin-top: 10%; }
   #contact hr {
-    width: 80%; } }
+    width: 80%; }
+  #contact .cont {
+    width: 80%; }
+  #contact .iconos {
+    display: block;
+    width: 90%; }
+    #contact .iconos img {
+      width: 30%;
+      height: auto; }
+  #contact strong {
+    margin: 10%;
+    display: inline-block;
+    font-family: "Graphik3";
+    font-size: 0.9em;
+    letter-spacing: 0.02em; }
+  #contact span {
+    margin: 0 10px; } }
 /*querie*/
 
 /*# sourceMappingURL=main.css.map */

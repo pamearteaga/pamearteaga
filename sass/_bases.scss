@@ -46,7 +46,9 @@ body{
 h1{
   font-family: "Graphik2";
   letter-spacing: 0.02em;
-  font-size: 3.8em;
+  font-size: 3.2em;
+  text-align:center;
+  margin-top:15%;
 }
 
 nav{
@@ -54,13 +56,13 @@ nav{
   height: auto;
   position: fixed;
   top:0;
+  z-index: 1;
   background: linear-gradient(to bottom , $azul_oscuro, $sin);
   border: none;
-  font-family: "Graphik";
-  font-size: 1.2em;
+  font-family: "Graphik3";
+  font-size: 0.95em;
   letter-spacing: 0.03em;
   text-align: center;
-  text-shadow: 0px 0px 10px $azul_oscuro;
   padding: 2% 0;
   ul{
     margin: 0;
@@ -71,14 +73,17 @@ nav{
     margin: 20px 30px;
     a{
       text-decoration:none;
+      text-transform:uppercase;
       color: $blanco;
       padding-bottom: 10px;
+      -webkit-transition: border-bottom 0.3s, color 0.3s;
+      transition: border-bottom 0.3s, color 0.3s;
     }
     a:hover{
       color: $magenta;
     }
     a:active{
-      border-bottom: 2px solid $magenta;
+      color: $magenta;
     }
   }
 }
@@ -112,10 +117,8 @@ nav{
     /*mix-blend-mode: darken;*/
   }
   .text{
-    opacity:1;
     width:420px;
-    opacity:0.85;
-    background-color:$azul_oscuro;
+    background-color: rgba(29,27,40,0.85);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     margin-left:40%;
     height:auto;
@@ -137,16 +140,11 @@ nav{
   width: 60%;
   display:block;
   margin: 8% auto;
-  h2{
-    font-family: "Graphik2";
-    letter-spacing: 0.02em;
-    font-size: 2.5em;
-    text-align:center;
-  }
-  img{
-    width:20%;
-    height:auto;
-    margin:1em;
+  i{
+    opacity:0.6;
+    font-size:5em;
+    display:inline-block;
+    margin:2%;
   }
 }
 
@@ -154,9 +152,6 @@ nav{
   width: 70%;
   display:block;
   margin: 5% auto;
-  h1{
-   text-align:right;
-  }
   .muestra{
     display: inline-block;
     background-image: url("./../../assest/img/thermoplastics.png");
@@ -173,18 +168,19 @@ nav{
 }
 
 .bajada{
-  width:100%;
+  width:90%;
   height:350px;
   margin-top:50px;
   background: linear-gradient(to top , $azul_oscuro, $azul_oscuro,$sin);
-  padding:130px 6% 0 6%;
-  letter-spacing: 0.02em;
+  padding:130px 5% 0 7%;
+  letter-spacing: 0.02e4;
   line-height:20px;
   h3{
     font-family: "Graphik2";
   }
   p{
     font-family: "Graphik4";
+    padding:0 2%;
   }
   .botones{
     margin-top:20px;
@@ -197,15 +193,28 @@ nav{
     text-decoration:none;
     }
   .codigobtn{
-    color:$naranjo;
-    margin-right:20px;
+    color:$verde;
+    margin-right:22px;
     padding:10px 15px;
-    border:2px solid $naranjo;
+    border:2px solid $verde;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .codigobtn:hover{
+    color:$blanco;
+    background-color:$verde;
   }
   .demobtn{
     color:$amarillo;
     padding:10px 25px;
     border:2px solid $amarillo;
+    margin-left:18px;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .demobtn:hover{
+    color:$blanco;
+    background-color:$amarillo;
   }
 }
 
@@ -218,18 +227,43 @@ nav{
     h1{
       display:inline-block;
       margin:4% 0 5px 0;
+      font-size:2.8em;
     }
     hr{
       width:400px;
       background: linear-gradient(to right , $morado, $magenta, $naranjo, $amarillo, $verde);
       border-style:none;
-      height:4px;
+      height:3px;
     }
     .cont{
       font-family: "Graphik";
       display:block;
       width:50%;
       margin:2% auto 0 auto;
+    }
+    p{
+      display:inline-block;
+    }
+    .iconos{
+      display:block;
+      width:100%;
+      margin:5% auto 0 auto;
+      img{
+        width:15%;
+        height:auto;
+        margin:0 20px;
+      }
+    }
+    strong{
+      margin:8%;
+      display:inline-block;
+      font-family: "Graphik3";
+      font-size:1em;
+      letter-spacing:0.02em;
+    }
+    span{
+      margin:0 10px;
+      font-family: "Graphik2";
     }
   }
 
@@ -251,7 +285,7 @@ nav{
     margin:10px 0 15px 0;
     img{
       display:block;
-      width:35px;
+      width:25px;
       height:auto;
       margin:10px auto 0 auto;
     }
@@ -271,6 +305,9 @@ nav{
       margin: 10px 0;
       padding-bottom:10px;
       border-bottom:1px solid $morado;
+      a{
+        font-size:0.85em;
+      }
       a:active{
         color: $magenta;
         border-bottom: none;
@@ -307,19 +344,17 @@ nav{
   }
 
   #skill{
-  width: 100%;
+  width: 90%;
   display:block;
   margin: 10% auto;
-    h2{
-      letter-spacing: 0.02em;
-      font-size: 2em;
-      text-align:center;
+    h1{
+      font-size: 1.8em;
     }
-    img{
-      width:28%;
-      height:auto;
-      margin:0.5em;
-    }
+    i{
+    font-size:4em;
+    display:inline-block;
+    margin:6%;
+  }
   }
 
   #work{
@@ -336,9 +371,35 @@ nav{
 }
 
 #contact{
+    h1{
+      font-size:2.6em;
+      margin-top:10%;
+    }
     hr{
       width:80%;
     }
+    .cont{
+      width:80%;
+    }
+    .iconos{
+      display:block;
+      width:90%;
+      img{
+        width:30%;
+        height:auto;
+      }
+    }
+    strong{
+      margin:10%;
+      display:inline-block;
+      font-family: "Graphik3";
+      font-size:0.9em;
+      letter-spacing:0.02em;
+    }
+    span{
+      margin:0 10px;
+    }
+   
   }
 
 
