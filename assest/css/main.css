@@ -138,7 +138,6 @@ nav {
   margin: 5% auto; }
   #work .muestra {
     display: inline-block;
-    background-image: url("./../../assest/img/thermoplastics.png");
     width: 28%;
     height: 400px;
     margin: 2%;
@@ -147,6 +146,30 @@ nav {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   #work .muestra:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  #work .bg1 {
+    background-image: url("./../../assest/img/swapi-react.png");
+    background-position: center center;
+    background-size: 100%; }
+  #work .bg2 {
+    background-image: url("./../../assest/img/jopafy.png");
+    background-repeat: no-repeat; }
+  #work .bg3 {
+    background-image: url("./../../assest/img/foodmap.png");
+    background-position: center top;
+    background-size: 100%; }
+  #work .bg4 {
+    background-image: url("./../../assest/img/lift.png");
+    background-position: center top;
+    background-size: 100%; }
+  #work .bg5 {
+    background-image: url("./../../assest/img/twitter.png");
+    background-repeat: no-repeat;
+    background-size: 300%; }
+  #work .bg6 {
+    background-image: url("./../../assest/img/trello.png");
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: right top; }
 
 .bajada {
   width: 90%;

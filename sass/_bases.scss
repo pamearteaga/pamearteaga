@@ -154,7 +154,6 @@ nav{
   margin: 5% auto;
   .muestra{
     display: inline-block;
-    background-image: url("./../../assest/img/thermoplastics.png");
     width: 28%;
     height:400px;
     margin:2%;
@@ -164,6 +163,36 @@ nav{
     }
   .muestra:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .bg1{
+    background-image: url("./../../assest/img/swapi-react.png");
+    background-position:center center;
+    background-size:100%;
+  }
+  .bg2{
+    background-image: url("./../../assest/img/jopafy.png");
+    background-repeat:no-repeat;
+  }
+  .bg3{
+    background-image: url("./../../assest/img/foodmap.png");
+    background-position:center top;
+    background-size:100%;
+  }
+  .bg4{
+    background-image: url("./../../assest/img/lift.png");
+    background-position:center top;
+    background-size:100%;
+  }
+  .bg5{
+    background-image: url("./../../assest/img/twitter.png");
+    background-repeat:no-repeat;
+    background-size:300%;
+  }
+  .bg6{
+    background-image: url("./../../assest/img/trello.png");
+    background-repeat:no-repeat;
+    background-size:250%;
+    background-position:right top;
   }
 }
 
