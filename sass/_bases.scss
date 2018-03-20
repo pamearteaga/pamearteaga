@@ -95,12 +95,27 @@ nav{
 #logo{
   margin-top:150px;
   width: 100%;
+  text-align:center;
+  h1{
+    margin:1% 0;
+    font-size: 3em;
+  }
+  h4{
+    font-family: "Graphik3";
+    letter-spacing:0.04em;
+  }
   img{
-    width:280px;
+    width:350px;
     height:auto;
     display:block;
     margin: 2% auto;
   }
+  span{
+      margin:0 10px;
+      font-family: "Graphik2";
+      color:$azul_oscuro;
+      font-size:1.3em;
+    }
 }
 
 #about{
@@ -114,11 +129,10 @@ nav{
     border-radius: 100%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     margin-left: 10%;
-    /*mix-blend-mode: darken;*/
   }
   .text{
     width:420px;
-    background-color: rgba(29,27,40,0.85);
+    background-color: rgba(29,27,40,0.9);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     margin-left:40%;
     height:auto;
@@ -130,6 +144,7 @@ nav{
     position: relative;
     margin-top: -15%;
     display:inline-block;
+    mix-blend-mode: hard-light;
     p{
       padding:20px 30px; 
     }
@@ -293,6 +308,8 @@ nav{
     span{
       margin:0 10px;
       font-family: "Graphik2";
+      color:$magenta;
+      font-size:1.3em;
     }
   }
 
@@ -303,7 +320,7 @@ nav{
 @media (max-width: 750px){
 
   h1{
-  font-size:3em;
+  font-size:2.8em;
   text-align:center;
 }
 
@@ -323,7 +340,7 @@ nav{
   nav{
     background: $azul_oscuro;
     text-shadow: none;
-    padding: 2% 0;
+    padding: 5px 0;
     ul{
       display:none;
       margin: 0;
@@ -352,6 +369,19 @@ nav{
       padding-top:10px;
     }
   }
+
+  #logo{
+  h1{
+    margin:10% 0 1% 0;
+    font-size: 2.5em;
+   }
+  img{
+    width:280px;
+    height:auto;
+    display:block;
+    margin: 2% auto;
+  }
+}
 
   #about{
     width:90%;

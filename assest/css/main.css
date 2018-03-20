@@ -86,12 +86,24 @@ nav {
 
 #logo {
   margin-top: 150px;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
+  #logo h1 {
+    margin: 1% 0;
+    font-size: 3em; }
+  #logo h4 {
+    font-family: "Graphik3";
+    letter-spacing: 0.04em; }
   #logo img {
-    width: 280px;
+    width: 350px;
     height: auto;
     display: block;
     margin: 2% auto; }
+  #logo span {
+    margin: 0 10px;
+    font-family: "Graphik2";
+    color: #1d1b28;
+    font-size: 1.3em; }
 
 #about {
   width: 60%;
@@ -103,11 +115,10 @@ nav {
     height: auto;
     border-radius: 100%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    margin-left: 10%;
-    /*mix-blend-mode: darken;*/ }
+    margin-left: 10%; }
   #about .text {
     width: 420px;
-    background-color: rgba(29, 27, 40, 0.85);
+    background-color: rgba(29, 27, 40, 0.9);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     margin-left: 40%;
     height: auto;
@@ -118,7 +129,8 @@ nav {
     letter-spacing: 0.05em;
     position: relative;
     margin-top: -15%;
-    display: inline-block; }
+    display: inline-block;
+    mix-blend-mode: hard-light; }
     #about .text p {
       padding: 20px 30px; }
 
@@ -250,11 +262,13 @@ nav {
     letter-spacing: 0.02em; }
   #contact span {
     margin: 0 10px;
-    font-family: "Graphik2"; }
+    font-family: "Graphik2";
+    color: #ea446a;
+    font-size: 1.3em; }
 
 @media (max-width: 750px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.8em;
     text-align: center; }
 
   #menur {
@@ -271,7 +285,7 @@ nav {
   nav {
     background: #1d1b28;
     text-shadow: none;
-    padding: 2% 0; }
+    padding: 5px 0; }
     nav ul {
       display: none;
       margin: 0;
@@ -292,6 +306,15 @@ nav {
     nav li:first-child {
       border-top: 1px solid #4f366f;
       padding-top: 10px; }
+
+  #logo h1 {
+    margin: 10% 0 1% 0;
+    font-size: 2.5em; }
+  #logo img {
+    width: 280px;
+    height: auto;
+    display: block;
+    margin: 2% auto; }
 
   #about {
     width: 90%;
