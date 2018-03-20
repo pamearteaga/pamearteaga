@@ -93,7 +93,7 @@ nav {
     font-size: 3em; }
   #logo h4 {
     font-family: "Graphik3";
-    letter-spacing: 0.04em; }
+    letter-spacing: 0.03em; }
   #logo img {
     width: 350px;
     height: auto;
@@ -307,14 +307,18 @@ nav {
       border-top: 1px solid #4f366f;
       padding-top: 10px; }
 
-  #logo h1 {
-    margin: 10% 0 1% 0;
-    font-size: 2.5em; }
-  #logo img {
-    width: 280px;
-    height: auto;
-    display: block;
-    margin: 2% auto; }
+  #logo {
+    margin-top: 110px; }
+    #logo h1 {
+      margin: 10% 0 1% 0;
+      font-size: 2.5em; }
+    #logo h4 {
+      margin-top: 2%; }
+    #logo img {
+      width: 280px;
+      height: auto;
+      display: block;
+      margin: 2% auto; }
 
   #about {
     width: 90%;
