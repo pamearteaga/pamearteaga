@@ -22,7 +22,6 @@ body {
   padding: 0;
   color: #ffffff;
   background-color: #4f366f;
-  /*background: linear-gradient(to bottom , $morado, $verde);*/
   -webkit-animation-name: example;
   -webkit-animation-duration: 300s;
   -webkit-animation-iteration-count: infinite;
@@ -356,6 +355,8 @@ nav {
       font-size: 4em;
       display: inline-block;
       margin: 6%; }
+    #skill i:last-child, #skill i:nth-last-of-type(2) {
+      display: none; }
 
   #work {
     margin-top: 20%;
