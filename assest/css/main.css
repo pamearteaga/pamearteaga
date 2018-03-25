@@ -21,33 +21,40 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  background-color: #4f366f;
-  -webkit-animation-name: example;
-  -webkit-animation-duration: 300s;
-  -webkit-animation-iteration-count: infinite;
-  animation-name: example;
+  background: linear-gradient(#4f366f, #ea446a, #e28947);
+  /*
+  background-color:$morado;
+  -webkit-animation-name: bg; 
+  -webkit-animation-duration: 300s; 
+  -webkit-animation-iteration-count: infinite; 
+  animation-name: bg;
   animation-duration: 300s;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  */ }
 
-@keyframes example {
-  0% {
-    background-color: #4f366f; }
-  20% {
-    background-color: #ea446a; }
-  40% {
-    background-color: #e28947; }
-  60% {
-    background-color: #f2de72; }
-  80% {
-    background-color: #41bdac; }
-  100% {
-    background-color: #4f366f; } }
+/*
+@keyframes bg {
+  0%   {background-color:$morado;}
+  20%  {background-color:$magenta;}
+  40%  {background-color:$naranjo;}
+  60% {background-color:$amarillo;}
+  80% {background-color:$verde;}
+  100%   {background-color:$morado;}
+}*/
 h1 {
   font-family: "Graphik2";
   letter-spacing: 0.02em;
-  font-size: 3.2em;
+  font-size: 2.8em;
   text-align: center;
-  margin-top: 15%; }
+  margin-top: 15%;
+  margin-bottom: 0; }
+
+hr {
+  width: 400px;
+  background: linear-gradient(to right, #4f366f, #ea446a, #e28947, #f2de72, #41bdac);
+  border-style: none;
+  height: 3px;
+  margin-bottom: 50px; }
 
 nav {
   width: 100%;
@@ -61,7 +68,7 @@ nav {
   font-size: 0.95em;
   letter-spacing: 0.03em;
   text-align: center;
-  padding: 2% 0; }
+  padding: 1% 0; }
   nav ul {
     margin: 0;
     padding: 0; }
@@ -76,9 +83,9 @@ nav {
       -webkit-transition: border-bottom 0.3s, color 0.3s;
       transition: border-bottom 0.3s, color 0.3s; }
     nav li a:hover {
-      color: #ea446a; }
+      color: #41bdac; }
     nav li a:active {
-      color: #ea446a; }
+      color: #41bdac; }
 
 #menur {
   display: none; }
@@ -109,8 +116,8 @@ nav {
   width: 60%;
   height: 100vh;
   display: block;
-  margin: 5% auto;
-  padding: 10px 5% 0 5%; }
+  margin: 2% auto;
+  padding: 5px 5% 0 5%; }
   #about img {
     width: 420px;
     height: auto;
@@ -200,32 +207,35 @@ nav {
   .bajada p {
     font-family: "Graphik4";
     padding: 0 2%; }
-  .bajada .botones {
-    margin-top: 20px; }
-  .bajada a {
+
+.botones {
+  position: relative;
+  top: -190px;
+  left: 25px; }
+  .botones a {
     display: inline-block;
     font-family: "Graphik3";
     letter-spacing: 0.03em;
     font-size: 14px;
     text-decoration: none; }
-  .bajada .codigobtn {
+  .botones .codigobtn {
     color: #41bdac;
-    margin-right: 22px;
+    margin-right: 20px;
     padding: 10px 15px;
     border: 2px solid #41bdac;
     -webkit-transition: background-color 0.3s, color 0.3s;
     transition: background-color 0.3s, color 0.3s; }
-  .bajada .codigobtn:hover {
+  .botones .codigobtn:hover {
     color: #ffffff;
     background-color: #41bdac; }
-  .bajada .demobtn {
+  .botones .demobtn {
     color: #f2de72;
     padding: 10px 25px;
     border: 2px solid #f2de72;
     margin-left: 18px;
     -webkit-transition: background-color 0.3s, color 0.3s;
     transition: background-color 0.3s, color 0.3s; }
-  .bajada .demobtn:hover {
+  .botones .demobtn:hover {
     color: #ffffff;
     background-color: #f2de72; }
 
@@ -236,13 +246,7 @@ nav {
   background: #1d1b28; }
   #contact h1 {
     display: inline-block;
-    margin: 4% 0 5px 0;
-    font-size: 2.8em; }
-  #contact hr {
-    width: 400px;
-    background: linear-gradient(to right, #4f366f, #ea446a, #e28947, #f2de72, #41bdac);
-    border-style: none;
-    height: 3px; }
+    margin: 4% 0 5px 0; }
   #contact .cont {
     font-family: "Graphik";
     display: block;
@@ -270,6 +274,92 @@ nav {
     color: #ea446a;
     font-size: 1.3em; }
 
+@media (max-width: 1950px) and (min-width: 1638px) {
+  #skill {
+    width: 60%;
+    height: 100vh;
+    padding-top: 100px;
+    display: block;
+    margin: 8% auto; }
+    #skill i {
+      font-size: 6em; }
+
+  .botones .codigobtn {
+    margin-right: 22px;
+    padding: 10px 25px; }
+  .botones .demobtn {
+    padding: 10px 35px; } }
+@media (max-width: 1400px) and (min-width: 1271px) {
+  #work .muestra {
+    width: 30%;
+    margin: 1%; }
+
+  .botones .codigobtn {
+    margin-right: 10px;
+    padding: 10px 15px; }
+  .botones .demobtn {
+    padding: 10px 25px; } }
+@media (max-width: 1270px) and (min-width: 1100px) {
+  #work .muestra {
+    width: 30%;
+    margin: 1%; }
+
+  .botones .codigobtn {
+    margin-right: 5px;
+    padding: 10px 5px; }
+  .botones .demobtn {
+    padding: 10px 15px; } }
+@media (max-width: 1099px) and (min-width: 751px) {
+  #work .muestra {
+    width: 45%;
+    margin: 2%; }
+
+  .botones .codigobtn {
+    margin-right: 0;
+    padding: 10px 10px; }
+  .botones .demobtn {
+    padding: 10px 20px; } }
+@media (max-width: 1351px) and (min-width: 1222px) {
+  #skill i {
+    font-size: 4.5em; } }
+@media (max-width: 1221px) and (min-width: 1093px) {
+  #skill i {
+    font-size: 4em; } }
+@media (max-width: 1092px) and (min-width: 963px) {
+  #skill i {
+    font-size: 3.5em; } }
+@media (max-width: 962px) and (min-width: 751px) {
+  #about {
+    width: 90%;
+    height: auto;
+    margin-top: 0; }
+
+  #skill {
+    width: 60%; }
+    #skill i {
+      font-size: 3em; } }
+@media (max-width: 832px) and (min-width: 751px) {
+  #about {
+    width: 55%;
+    height: auto;
+    margin-top: 50px; }
+    #about img {
+      width: 100%;
+      height: auto;
+      margin-left: 0; }
+    #about .text {
+      width: 100%;
+      margin: 5% 0;
+      font-size: 1.2em;
+      line-height: 25px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      padding: 0; }
+
+  #skill {
+    width: 60%; }
+    #skill i {
+      font-size: 2.5em; } }
 @media (max-width: 750px) {
   h1 {
     font-size: 2.8em;
@@ -369,6 +459,11 @@ nav {
       display: block;
       width: 85%;
       margin: 15% auto; }
+
+  .botones {
+    position: relative;
+    top: -190px;
+    left: 20px; }
 
   #contact h1 {
     font-size: 2.6em;

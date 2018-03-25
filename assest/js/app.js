@@ -16,10 +16,5 @@ $('#menur').click(function(){
   $('ul').toggle("blind");
 });
 
-//texto deslizante
-/*
-$(window).scroll(function(){
-  $('p').animate({left: "40%", opacity: 1}, {duration: 450,queue: false});
-});*/
 
 

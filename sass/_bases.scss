@@ -24,31 +24,44 @@ body{
   margin: 0;
   padding:0;
   color: $blanco;
+  background: linear-gradient($morado, $magenta, $naranjo);
+  /*
   background-color:$morado;
-  -webkit-animation-name: example; 
+  -webkit-animation-name: bg; 
   -webkit-animation-duration: 300s; 
   -webkit-animation-iteration-count: infinite; 
-  animation-name: example;
+  animation-name: bg;
   animation-duration: 300s;
   animation-iteration-count: infinite;
+  */
 }
-
-@keyframes example {
+/*
+@keyframes bg {
   0%   {background-color:$morado;}
   20%  {background-color:$magenta;}
   40%  {background-color:$naranjo;}
   60% {background-color:$amarillo;}
   80% {background-color:$verde;}
   100%   {background-color:$morado;}
-}
+}*/
 
 h1{
   font-family: "Graphik2";
   letter-spacing: 0.02em;
-  font-size: 3.2em;
+  font-size:2.8em;
   text-align:center;
   margin-top:15%;
+  margin-bottom: 0;
+
 }
+
+ hr{
+      width:400px;
+      background: linear-gradient(to right , $morado, $magenta, $naranjo, $amarillo, $verde);
+      border-style:none;
+      height:3px;
+      margin-bottom: 50px;
+    }
 
 nav{
   width: 100%;
@@ -62,7 +75,7 @@ nav{
   font-size: 0.95em;
   letter-spacing: 0.03em;
   text-align: center;
-  padding: 2% 0;
+  padding: 1% 0;
   ul{
     margin: 0;
     padding:0;
@@ -79,10 +92,10 @@ nav{
       transition: border-bottom 0.3s, color 0.3s;
     }
     a:hover{
-      color: $magenta;
+      color: $verde;
     }
     a:active{
-      color: $magenta;
+      color: $verde;
     }
   }
 }
@@ -118,12 +131,14 @@ nav{
   }
 }
 
+
+
 #about{
   width:60%;
   height:100vh;
   display:block;
-  margin: 5% auto;
-  padding: 10px 5% 0 5%;
+  margin: 2% auto;
+  padding: 5px 5% 0 5%;
   img{
     width:420px;
     height:auto;
@@ -230,9 +245,12 @@ nav{
     font-family: "Graphik4";
     padding:0 2%;
   }
-  .botones{
-    margin-top:20px;
-  }
+}
+
+.botones{
+  position:relative;
+  top:-190px;
+  left:25px;
    a{
     display:inline-block;
     font-family: "Graphik3";
@@ -242,7 +260,7 @@ nav{
     }
   .codigobtn{
     color:$verde;
-    margin-right:22px;
+    margin-right:20px;
     padding:10px 15px;
     border:2px solid $verde;
     -webkit-transition: background-color 0.3s, color 0.3s;
@@ -275,13 +293,6 @@ nav{
     h1{
       display:inline-block;
       margin:4% 0 5px 0;
-      font-size:2.8em;
-    }
-    hr{
-      width:400px;
-      background: linear-gradient(to right , $morado, $magenta, $naranjo, $amarillo, $verde);
-      border-style:none;
-      height:3px;
     }
     .cont{
       font-family: "Graphik";
@@ -320,6 +331,156 @@ nav{
 
 
 // RESPONSIVE
+
+@media (max-width: 1950px) and (min-width: 1638px){
+  #skill{
+  width: 60%;
+  height:100vh;
+  padding-top:100px;
+  display:block;
+  margin: 8% auto;
+    i{
+      font-size:6em;
+    }
+  }
+
+  .botones{
+  .codigobtn{
+    margin-right:22px;
+    padding:10px 25px;
+  }
+  .demobtn{
+    padding:10px 35px;
+  }
+ }
+}
+
+@media (max-width: 1400px) and (min-width: 1271px){
+ #work{
+  .muestra{
+    width: 30%;
+    margin:1%;
+  }
+}
+  .botones{
+  .codigobtn{
+    margin-right:10px;
+    padding:10px 15px;
+  }
+  .demobtn{
+    padding:10px 25px;
+  }
+ }
+}
+
+@media (max-width: 1270px) and (min-width: 1100px){
+ #work{
+  .muestra{
+    width: 30%;
+    margin:1%;
+  }
+}
+
+  .botones{
+  .codigobtn{
+    margin-right:5px;
+    padding:10px 5px;
+  }
+  .demobtn{
+    padding:10px 15px;
+  }
+ }
+}
+
+@media (max-width: 1099px) and (min-width: 751px){
+ #work{
+  .muestra{
+    width: 45%;
+    margin:2%;
+  }
+}
+
+  .botones{
+  .codigobtn{
+    margin-right:0;
+    padding:10px 10px;
+  }
+  .demobtn{
+    padding:10px 20px;
+  }
+ }
+}
+
+
+@media (max-width: 1351px) and (min-width: 1222px){
+  #skill{
+    i{
+      font-size:4.5em;
+    }
+  }
+}
+
+@media (max-width: 1221px) and (min-width: 1093px){
+  #skill{
+    i{
+      font-size:4em;
+    }
+  }
+}
+
+@media (max-width: 1092px) and (min-width: 963px){
+  #skill{
+    i{
+      font-size:3.5em;
+    }
+  }
+}
+
+@media (max-width: 962px) and (min-width: 751px){
+  #about{
+    width:90%;
+    height:auto;
+    margin-top:0;
+  }
+
+  #skill{
+    width: 60%;
+    i{
+      font-size:3em;
+    }
+  }
+}
+
+@media (max-width: 832px) and (min-width: 751px){
+   #about{
+    width:55%;
+    height:auto;
+    margin-top:50px;
+    img{
+      width:100%;
+      height:auto;
+      margin-left: 0;
+
+    }
+    .text{
+      width:100%;
+      margin:5% 0;
+      font-size:1.2em;
+      line-height: 25px;
+      letter-spacing: 0.02em;
+      text-align:center;
+      padding: 0; 
+     }
+  }
+
+  #skill{
+    width: 60%;
+    i{
+      font-size:2.5em;
+    }
+  }
+}
+
 
 @media (max-width: 750px){
 
@@ -445,6 +606,12 @@ nav{
     width: 85%;
     margin:15% auto;
   }
+}
+
+.botones{
+  position:relative;
+  top:-190px;
+  left:20px;
 }
 
 #contact{
