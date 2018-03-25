@@ -50,7 +50,7 @@ h1 {
   margin-bottom: 0; }
 
 hr {
-  width: 400px;
+  width: 450px;
   background: linear-gradient(to right, #4f366f, #ea446a, #e28947, #f2de72, #41bdac);
   border-style: none;
   height: 3px;
@@ -109,7 +109,7 @@ nav {
   #logo span {
     margin: 0 10px;
     font-family: "Graphik2";
-    color: #1d1b28;
+    color: #41bdac;
     font-size: 1.3em; }
 
 #about {
@@ -170,8 +170,8 @@ nav {
   #work .muestra:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   #work .bg1 {
-    background-image: url("./../../assest/img/swapi-react.png");
-    background-position: center center;
+    background-image: url("./../../assest/img/listock.jpg");
+    background-position: bottom center;
     background-size: 100%; }
   #work .bg2 {
     background-image: url("./../../assest/img/jopafy.png");
@@ -251,7 +251,7 @@ nav {
     font-family: "Graphik";
     display: block;
     width: 50%;
-    margin: 2% auto 0 auto; }
+    margin: 1% auto 0 auto; }
   #contact p {
     display: inline-block; }
   #contact .iconos {
@@ -365,6 +365,9 @@ nav {
     font-size: 2.8em;
     text-align: center; }
 
+  hr {
+    width: 80%; }
+
   #menur {
     font-family: "Graphik2";
     letter-spacing: 0.05em;
@@ -468,8 +471,6 @@ nav {
   #contact h1 {
     font-size: 2.6em;
     margin-top: 10%; }
-  #contact hr {
-    width: 80%; }
   #contact .cont {
     width: 80%; }
   #contact .iconos {

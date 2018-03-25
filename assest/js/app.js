@@ -7,6 +7,7 @@ $('a[href^="#"]').click(function() {
   if (seccion.length == 0) {
     seccion = $('html');
   }
+
   $('html, body').animate({ scrollTop: seccion.offset().top }, 500);
     return false;
   });

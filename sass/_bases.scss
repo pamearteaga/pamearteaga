@@ -56,7 +56,7 @@ h1{
 }
 
  hr{
-      width:400px;
+      width:450px;
       background: linear-gradient(to right , $morado, $magenta, $naranjo, $amarillo, $verde);
       border-style:none;
       height:3px;
@@ -126,7 +126,7 @@ nav{
   span{
       margin:0 10px;
       font-family: "Graphik2";
-      color:$azul_oscuro;
+      color:$verde;
       font-size:1.3em;
   }
 }
@@ -199,8 +199,8 @@ nav{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .bg1{
-    background-image: url("./../../assest/img/swapi-react.png");
-    background-position:center center;
+    background-image: url("./../../assest/img/listock.jpg");
+    background-position:bottom center;
     background-size:100%;
   }
   .bg2{
@@ -298,7 +298,7 @@ nav{
       font-family: "Graphik";
       display:block;
       width:50%;
-      margin:2% auto 0 auto;
+      margin:1% auto 0 auto;
     }
     p{
       display:inline-block;
@@ -488,6 +488,9 @@ nav{
   font-size:2.8em;
   text-align:center;
 }
+ hr{
+      width:80%;
+    }
 
   #menur{
     font-family: "Graphik2";
@@ -618,9 +621,6 @@ nav{
     h1{
       font-size:2.6em;
       margin-top:10%;
-    }
-    hr{
-      width:80%;
     }
     .cont{
       width:80%;
