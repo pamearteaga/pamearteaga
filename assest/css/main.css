@@ -42,7 +42,7 @@ body {
   100%   {background-color:$morado;}
 }*/
 h1 {
-  font-family: "Graphik2";
+  font-family: "Graphik2", Arial, Helvetica, sans-serif;
   letter-spacing: 0.02em;
   font-size: 2.8em;
   text-align: center;
@@ -64,7 +64,7 @@ nav {
   z-index: 1;
   background: linear-gradient(to bottom, #1d1b28, rgba(0, 0, 0, 0));
   border: none;
-  font-family: "Graphik3";
+  font-family: "Graphik3", Arial, Helvetica, sans-serif;
   font-size: 0.95em;
   letter-spacing: 0.03em;
   text-align: center;
@@ -99,7 +99,7 @@ nav {
     margin: 1% 0;
     font-size: 3em; }
   #logo h4 {
-    font-family: "Graphik3";
+    font-family: "Graphik3", Arial, Helvetica, sans-serif;
     letter-spacing: 0.03em; }
   #logo img {
     width: 350px;
@@ -108,7 +108,7 @@ nav {
     margin: 2% auto; }
   #logo span {
     margin: 0 10px;
-    font-family: "Graphik2";
+    font-family: "Graphik2", Arial, Helvetica, sans-serif;
     color: #41bdac;
     font-size: 1.3em; }
 
@@ -131,7 +131,7 @@ nav {
     margin-left: 40%;
     height: auto;
     text-align: left;
-    font-family: "Graphik3";
+    font-family: "Graphik3", Arial, Helvetica, sans-serif;
     font-size: 1em;
     line-height: 25px;
     letter-spacing: 0.05em;
@@ -189,10 +189,10 @@ nav {
     background-repeat: no-repeat;
     background-size: 300%; }
   #work .bg6 {
-    background-image: url("./../../assest/img/trello.png");
+    background-image: url("./../../assest/img/swapi-react.png");
     background-repeat: no-repeat;
-    background-size: 250%;
-    background-position: right top; }
+    background-size: 100%;
+    background-position: center; }
 
 .bajada {
   width: 90%;
@@ -203,9 +203,9 @@ nav {
   letter-spacing: 0.02e4;
   line-height: 20px; }
   .bajada h3 {
-    font-family: "Graphik2"; }
+    font-family: "Graphik2", Arial, Helvetica, sans-serif; }
   .bajada p {
-    font-family: "Graphik4";
+    font-family: "Graphik4", Arial, Helvetica, sans-serif;
     padding: 0 2%; }
 
 .botones {
@@ -214,7 +214,7 @@ nav {
   left: 25px; }
   .botones a {
     display: inline-block;
-    font-family: "Graphik3";
+    font-family: "Graphik3", Arial, Helvetica, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
     text-decoration: none; }
@@ -248,7 +248,7 @@ nav {
     display: inline-block;
     margin: 4% 0 5px 0; }
   #contact .cont {
-    font-family: "Graphik";
+    font-family: "Graphik", Arial, Helvetica, sans-serif;
     display: block;
     width: 50%;
     margin: 1% auto 0 auto; }
@@ -265,12 +265,12 @@ nav {
   #contact strong {
     margin: 8%;
     display: inline-block;
-    font-family: "Graphik3";
+    font-family: "Graphik3", Arial, Helvetica, sans-serif;
     font-size: 1em;
     letter-spacing: 0.02em; }
   #contact span {
     margin: 0 10px;
-    font-family: "Graphik2";
+    font-family: "Graphik2", Arial, Helvetica, sans-serif;
     color: #ea446a;
     font-size: 1.3em; }
 
@@ -369,7 +369,7 @@ nav {
     width: 80%; }
 
   #menur {
-    font-family: "Graphik2";
+    font-family: "Graphik2", Arial, Helvetica, sans-serif;
     letter-spacing: 0.05em;
     display: block;
     margin: 10px 0 15px 0; }
@@ -482,7 +482,7 @@ nav {
   #contact strong {
     margin: 10%;
     display: inline-block;
-    font-family: "Graphik3";
+    font-family: "Graphik3", Arial, Helvetica, sans-serif;
     font-size: 0.9em;
     letter-spacing: 0.02em; }
   #contact span {
